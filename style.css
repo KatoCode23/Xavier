@@ -15,7 +15,6 @@ body{
   left: 0;
   background-color: black;
   padding: 0;
-  border: solid white 3px;
 }
 
 .button{
@@ -31,6 +30,21 @@ body{
   line-height: 8;
   text-align: center;
 }
+
+.logo-container{
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  padding: 10px;
+  background: black;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(logo.jpg);
+}
+
 .fa-facebook, .fa-instagram{
   color: white;
   text-decoration: none;
@@ -48,7 +62,6 @@ body{
   background-color: black;
   text-align: center;
   width: 100%;
-  border: solid;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -59,7 +72,11 @@ body{
  and (max-width: 768px) {
 
 .main-content{
-    font-size: 40px;
+  font-size: 40px;
+}
+.logo-container{
+  height: 400px;
+  width: 400px;
 }
 }
 
@@ -68,5 +85,9 @@ body{
 
 .main-content{
     font-size: 25px;
+}
+.logo-container{
+  height: 300px;
+  width: 300px;
 }
 }

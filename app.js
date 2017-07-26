@@ -9,13 +9,7 @@ app.controller('headerController', function($scope){
 
   $scope.clickbate = [
       {
-          name: 'BK'
-      },
-      {
-         name: 'B4'
-      },
-      {
-        name: 'Barclays'
+          name: 'Coming Soon...'
       }
   ];
 
