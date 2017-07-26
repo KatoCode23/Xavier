@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BK B4 Barclays</title>
+    <meta property="og:title" content="BK B4 Barclays">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://noelelieproductions.com/NoelPuck/107.jpg">
+    <meta property="og:url" content="http://noelelieproductions.com/">
+    <script type="text/javascript" src="https://opensource.keycdn.com/angularjs/1.6.5/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/f6bd501eb7.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
+ </head>
+  <body ng-app="app" ng-controller="bodyController">
+    <header ng-controller="headerController">
+      <div class="header-bar">
+            <span
+            class="button"
+            ng-repeat="time in clickbate"
+            ng-click="testClick(kalen)">{{time.name}}
+          </span>
+      </div>
+
+    </header>
+    <div class="main-content" ng-controller="contentController">
+          BK B4 Barclays #88
+   </div>
+   <footer class="footer">
+       <a href="http://facebook.com/" target="_blank" class="fa fa-facebook"></a>
+       <a href="http://instagram.com/" target="_blank" class="fa fa-instagram"></a>
+   </footer>
+</body>
+</html>

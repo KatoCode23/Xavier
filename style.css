@@ -1,0 +1,72 @@
+body{
+  background-color: black;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.header-bar{
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  padding: 0;
+  border: solid white 3px;
+}
+
+.button{
+  padding: 5px;
+  font-size: 20px;
+}
+
+.main-content{
+  font-family: 'Yellowtail', cursive;
+  margin: 0 auto;
+  padding: 50px;
+  font-size: 60px;
+  line-height: 8;
+  text-align: center;
+}
+.fa-facebook, .fa-instagram{
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+  margin: 0 auto;
+}
+.fa-instagram:hover, .fa-facebook:hover{
+  text-decoration: none;
+  transform: rotate(360deg);
+  transition: all .5s;
+}
+
+.footer{
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  border: solid;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+}
+
+@media (min-width: 0px)
+ and (max-width: 768px) {
+
+.main-content{
+    font-size: 40px;
+}
+}
+
+@media (min-width: 0px)
+ and (max-width: 414px) {
+
+.main-content{
+    font-size: 25px;
+}
+}
