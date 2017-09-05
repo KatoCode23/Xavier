@@ -15,11 +15,6 @@ app.controller('headerController', function($scope){
 
 $scope.testClick = function(kalen){
 var position1 = $scope.clickbate[0];
-var position2 = $scope.clickbate[1];
-var position3 = $scope.clickbate[2];
-console.log(position1);
-console.log(position2);
-console.log(position3);
 console.log(position1.name);
 }
 });

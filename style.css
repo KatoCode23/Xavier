@@ -15,11 +15,17 @@ body{
   left: 0;
   background-color: black;
   padding: 0;
+  height: 5%;
+  border-top: solid black 20px;
 }
 
 .button{
   padding: 5px;
   font-size: 20px;
+}
+
+.button span{
+  padding: 10px;
 }
 
 .main-content{
@@ -29,13 +35,20 @@ body{
   font-size: 60px;
   line-height: 8;
   text-align: center;
+  display: block;
+  animation: fadein 10s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 .logo-container{
   display: block;
   margin: 0 auto;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   text-align: center;
   padding: 10px;
   background: black;
@@ -45,14 +58,18 @@ body{
   background-image: url(logo.jpg);
 }
 
-.fa-facebook, .fa-instagram{
+.email-inquiry{
+  text-decoration: none;
+}
+
+.fa-envelope-o, .fa-instagram{
   color: white;
   text-decoration: none;
   font-size: 30px;
   padding: 10px;
   margin: 0 auto;
 }
-.fa-instagram:hover, .fa-facebook:hover{
+.fa-instagram:hover, .fa-envelope-o:hover{
   text-decoration: none;
   transform: rotate(360deg);
   transition: all .5s;
@@ -62,21 +79,24 @@ body{
   background-color: black;
   text-align: center;
   width: 100%;
-  position: fixed;
+  position: relative;
   bottom: 0;
   right: 0;
   padding: 0;
+  animation: fadein 10s;
 }
+
 
 @media (min-width: 0px)
  and (max-width: 768px) {
 
 .main-content{
   font-size: 40px;
+  padding: 20px;
 }
 .logo-container{
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 250px;
 }
 }
 
@@ -85,9 +105,5 @@ body{
 
 .main-content{
     font-size: 25px;
-}
-.logo-container{
-  height: 300px;
-  width: 300px;
 }
 }

@@ -1,0 +1,52 @@
+body{
+  background-color: white;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-container{
+  display: block;
+  background-position: center;
+  margin: 0 auto;
+  padding: 50px;
+  background-repeat: no-repeat;
+  background-image: url(godzLogo.jpg);
+  background-size: contain;
+  border: solid 5px #46d2b1;
+  width: 500px;
+  height: 500px;
+}
+
+header{
+  border: solid 5px red;
+  width: 100%;
+  height: 10%;
+  font-size: 50px;
+
+}
+
+footer{
+  font-size: 40px;
+  border: solid green 5px;
+  height: 30px;
+}
+
+.photo{
+  border: solid 5px;
+  width: 200px;
+  height: 200px;
+  display: block;
+  background-image: url(godzLogo.jpg);
+  background-position: center;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.photo:hover{
+  width: 500px;
+}
