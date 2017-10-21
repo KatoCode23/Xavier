@@ -9,43 +9,77 @@ body{
 
 .header-bar{
   text-align: center;
+  margin: 0 auto;
   width: 100%;
   position: fixed;
+  display: block;
   top: 0;
   left: 0;
   background-color: black;
   padding: 0;
-  height: 5%;
-  border-top: solid black 20px;
+  height: 10%;
 }
 
-.button{
+.bio-click, .trailer-click{
+  display: block;
+  position: relative;
   padding: 5px;
-  font-size: 20px;
+  margin: 0 auto;
+  font-size: 30px;
+  color: white;
+  background: black;
 }
 
-.button span{
-  padding: 10px;
+input.bio-click, input.trailer-click{
+  text-decoration: none;
+  border: none;
+  font-family: 'Yellowtail', cursive;
+}
+
+.bio-container{
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 250px;
+  position: relative;
+  background-color: black;
+  color: white;
+  overflow-x: scroll;
+}
+
+.bio-container p{
+  font-size: 25px;
+  margin: 0 auto;
+  position: relative;
+  line-height: 40px;
+}
+
+.bio-container a{
+  text-decoration: underline;
+  font-size: 35px;
+  color: grey;
+}
+
+.youTube{
+  text-decoration: underline;
+  font-size: 35px;
+  color: grey;
 }
 
 .main-content{
   font-family: 'Yellowtail', cursive;
   margin: 0 auto;
-  padding: 50px;
+  padding: 60px;
   font-size: 60px;
   line-height: 8;
   text-align: center;
   display: block;
-  animation: fadein 10s;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
 }
 
 .logo-container{
   display: block;
+  position: relative;
+  top: 35px;
   margin: 0 auto;
   width: 400px;
   height: 400px;
@@ -62,14 +96,14 @@ body{
   text-decoration: none;
 }
 
-.fa-envelope-o, .fa-instagram{
+.fa-envelope-o, .fa-instagram, .fa-youtube-play{
   color: white;
   text-decoration: none;
   font-size: 30px;
   padding: 10px;
   margin: 0 auto;
 }
-.fa-instagram:hover, .fa-envelope-o:hover{
+.fa-instagram:hover, .fa-envelope-o:hover, .fa-youtube-play{
   text-decoration: none;
   transform: rotate(360deg);
   transition: all .5s;
@@ -83,7 +117,6 @@ body{
   bottom: 0;
   right: 0;
   padding: 0;
-  animation: fadein 10s;
 }
 
 
@@ -97,6 +130,10 @@ body{
 .logo-container{
   height: 300px;
   width: 250px;
+  top: 70px;
+}
+.bio-container{
+  top: 15px;
 }
 }
 

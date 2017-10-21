@@ -14,25 +14,51 @@
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
  </head>
-  <body ng-app="app" ng-controller="bodyController">
-    <header ng-controller="headerController">
-      <div class="header-bar">
-            <span
-            class="button"
-            ng-repeat="time in clickbate"
-            ng-click="testClick(kalen)">{{time.name}}
-          </span>
+<body ng-app="app">
+  <div class="main-content" ng-controller="contentController">
+    <header>
+       <div class="header-bar">
+           <input class="bio-click" type="button" value="Bio" ng-click="ShowHide()" />
+           <br />
+           <br />
       </div>
+   </header>
 
-    </header>
-    <div class="main-content" ng-controller="contentController">
-          <div class="logo-container">
+      <div class="logo-container"></div>
 
-          </div>
-   </div>
+      <div ng-show="IsVisible" class="bio-container">
+        <p><a href="https://www.roc4life.com/2017/10/19/bk-b4-barclays-brooklyn/" target="_blank">Roc4Life.com says....</a>
+          Brooklyn holds a special place in many people’s hearts. It is one of
+          five boroughs in New York City and it’s been undergoing some significant
+          changes for quite awhile. Gentrification is real and it is happening all around the city.
+          Brooklyn has been under the gentrification umbrella for quite some time.
+          These changes are bringing in different businesses and different types
+          of people that are disturbing the chemistry of the community.
+          The genuine vibe and culture of the different BK communities are
+          like no other. BK b4 Barclays is here to keep the culture of Brooklyn alive.
+        </p>
+        <p>BK b4 Barclays™ is looking to secure all things Brooklyn and not let gentrification
+           change its rich past and history. There are many people moving out of the borough to
+           find more affordable living arrangements. They are taking their stories with them.
+           Whether it was a success or a struggle, growing up in Brooklyn was an experience.
+           Brooklyn raised some of the culture’s biggest influences. Biggie Smalls, Jay Z, Spike Lee,
+           and Mike Tyson are just a few of the people who came up on those BK streets.
+           That Brooklyn is quickly disappearing and being replaced by a culture that most
+           in the neighborhood don’t identify with.
+        </p>
+        <p>
+          This Saturday, in Brooklyn (of course), BK b4 Barclays™ is set to launch and celebrate BK.
+          This event is open to the public and invited guests can partake in an evening of sharing stories,
+          building connections, previewing the docu-series, check out some vintage BK photos while
+          listening to the tunes of BK’s own DJ Clark Kent.
+          For more information and tickets to the launch on Saturday, visit here<a href="https://bkb4barclays.splashthat.com/" target="_blank"> LINK</a>
+        </p>
+    </div>
+  </div>
    <footer class="footer">
        <a  class="email-inquiry" href="mailTo:Xavier@bkb4barclays.com?Subject=BKB4%20Barclays%20Inquiries.."><i class="fa fa-envelope-o"></i></a>
        <a href="http://instagram.com/Bkb4barclays" target="_blank" class="fa fa-instagram"></a>
+       <a href="https://www.youtube.com/watch?v=jgil9cKDZW4" target="_blank" class="fa fa-youtube-play"></a>
    </footer>
 </body>
 </html>
