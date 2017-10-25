@@ -20,20 +20,36 @@ body{
   height: 10%;
 }
 
-.bio-click, .trailer-click{
+.gallery-header{
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  background-color: black;
+  padding: 0;
+  height: 50px;
+  line-height: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bio-click{
   display: block;
   position: relative;
   padding: 5px;
   margin: 0 auto;
   font-size: 30px;
   color: white;
-  background: black;
+  background-color: black;
+  font-style: italic;
 }
 
-input.bio-click, input.trailer-click{
+input.bio-click{
   text-decoration: none;
   border: none;
-  font-family: 'Yellowtail', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
 .bio-container{
@@ -67,13 +83,44 @@ input.bio-click, input.trailer-click{
 }
 
 .main-content{
-  font-family: 'Yellowtail', cursive;
+  font-family: 'Roboto', sans-serif;
   margin: 0 auto;
   padding: 60px;
   font-size: 60px;
   line-height: 8;
   text-align: center;
   display: block;
+}
+
+.picture-container{
+  position: relative;
+  display: block;
+  top: 40px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background-color: black;
+}
+
+.picture-container p{
+  position: relative;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+  border: solid;
+}
+
+.picture-container img{
+  position: relative;
+  display: block;
+  width: 225px;
+  height: 225px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 .logo-container{
@@ -103,7 +150,7 @@ input.bio-click, input.trailer-click{
   padding: 10px;
   margin: 0 auto;
 }
-.fa-instagram:hover, .fa-envelope-o:hover, .fa-youtube-play{
+.fa-instagram:hover, .fa-envelope-o:hover, .fa-youtube-play:hover{
   text-decoration: none;
   transform: rotate(360deg);
   transition: all .5s;
@@ -117,8 +164,16 @@ input.bio-click, input.trailer-click{
   bottom: 0;
   right: 0;
   padding: 0;
+  position: fixed;
 }
 
+.black-bar{
+  width: 100%;
+  height: 10px;
+  position: relative;
+  color: white;
+  background-color: black;
+}
 
 @media (min-width: 0px)
  and (max-width: 768px) {
@@ -135,6 +190,8 @@ input.bio-click, input.trailer-click{
 .bio-container{
   top: 15px;
 }
+.bio-click{
+  top: 30px;
 }
 
 @media (min-width: 0px)

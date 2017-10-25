@@ -12,20 +12,15 @@
     <script src="https://use.fontawesome.com/f6bd501eb7.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
  </head>
 <body ng-app="app">
   <div class="main-content" ng-controller="contentController">
     <header>
-       <div class="header-bar">
-           <input class="bio-click" type="button" value="Bio" ng-click="ShowHide()" />
-           <br />
-           <br />
-      </div>
+       <div class="header-bar"></div>
    </header>
-
       <div class="logo-container"></div>
-
+          <input class="bio-click" type="button" value="Press" ng-click="ShowHide()" />
       <div ng-show="IsVisible" class="bio-container">
         <p><a href="https://www.roc4life.com/2017/10/19/bk-b4-barclays-brooklyn/" target="_blank">Roc4Life.com says....</a>
           Brooklyn holds a special place in many people’s hearts. It is one of
