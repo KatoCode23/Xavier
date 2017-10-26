@@ -63,12 +63,15 @@ body{
 .bio-click{
   display: inline-block;
   position: relative;
-  padding: 15px;
+  padding: 5px;
   margin: 0 auto;
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   background-color: black;
   font-style: italic;
+  height: 85px;
+  line-height: 150px;
+  top: 0;
 }
 
 .gallery-toggle a{
@@ -80,7 +83,7 @@ body{
   position: relative;
   padding: 15px;
   margin: 0 auto;
-  font-size: 30px;
+  font-size: 20px;
   background-color: black;
   font-style: italic;
 }
@@ -90,7 +93,7 @@ body{
   right: 0;
   top: 0;
   display: block;
-  width: 100px;
+  width: 125px;
   height: 100px;
   padding: 10px;
   background-image: url(logo.jpg);
@@ -106,7 +109,7 @@ body{
    left: 0;
    top: 0;
    display: block;
-   width: 100px;
+   width: 125px;
    height: 100px;
    padding: 10px;
    background-image: url(logo.jpg);
@@ -123,7 +126,7 @@ span.bio-click{
   font-family: 'Roboto', sans-serif;
 }
 
-.bio-container{
+.press-container{
   display: block;
   margin: 0 auto;
   width: 300px;
@@ -132,16 +135,17 @@ span.bio-click{
   background-color: black;
   color: white;
   overflow-x: scroll;
+  top: -100px;
 }
 
-.bio-container p{
+.press-container p{
   font-size: 25px;
   margin: 0 auto;
   position: relative;
   line-height: 40px;
 }
 
-.bio-container a{
+.press-container a{
   text-decoration: underline;
   font-size: 35px;
   color: grey;
@@ -156,7 +160,7 @@ span.bio-click{
 .main-content{
   font-family: 'Roboto', sans-serif;
   margin: 0 auto;
-  padding: 40px;
+  padding: 30px;
   font-size: 40px;
   line-height: 8;
   text-align: center;
@@ -188,29 +192,13 @@ span.bio-click{
 .picture-container img{
   position: relative;
   display: block;
-  width: 225px;
-  height: 225px;
+  width: 200px;
+  height: 375px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   margin: 0 auto;
   padding: 10px;
-}
-
-.logo-container{
-  display: block;
-  position: relative;
-  top: 0;
-  margin: 0 auto;
-  width: 400px;
-  height: 400px;
-  text-align: center;
-  padding: 10px;
-  background: black;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  background-image: url(logo.jpg);
 }
 
 .email-inquiry{
@@ -224,10 +212,50 @@ span.bio-click{
   padding: 10px;
   margin: 0 auto;
 }
+
+
+
 .fa-instagram:hover, .fa-envelope-o:hover, .fa-youtube-play:hover{
   text-decoration: none;
   transform: rotate(360deg);
   transition: all .5s;
+}
+
+.center-piece{
+  position: relative;
+  top: 150px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 100px;
+  width: 200px;
+  height: 150px;
+}
+
+.button-holder{
+  position: relative;
+  top: 150px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 100px;
+  width: 250px;
+  height: 80px;
+}
+
+.button-holder button{
+  font-size: 30px;
+  width: 250px;
+  background-color: black;
+  color: white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.center-piece a{
+font-size: 40px;
 }
 
 .footer{
@@ -261,7 +289,7 @@ span.bio-click{
   width: 250px;
   top: 70px;
 }
-.bio-container{
+.press-container{
   top: 15px;
 }
 
@@ -271,13 +299,24 @@ span.bio-click{
 }
 
 .logo-toggleL{
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 70px;
 }
 
 .logo-toggleR{
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 70px;
+}
+
+.gallery-toggle a{
+  font-size: 15px;
+  padding: 5px;
+}
+.button-holder{
+  line-height: 50px;
+}
+.bio-click{
+  top: 80px;
 }
 }
 
@@ -286,5 +325,19 @@ span.bio-click{
 
 .main-content{
     font-size: 25px;
+    padding: 10px;
+}
+.gallery-toggle a{
+  font-size: 10px;
+  padding: 5px;
+}
+.logo-toggleL{
+  width: 50px;
+  height: 40px;
+}
+
+.logo-toggleR{
+  width: 50px;
+  height: 40px;
 }
 }

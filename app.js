@@ -6,10 +6,6 @@ app.controller('contentController', function($scope){
   $scope.ShowHide = function () {
   $scope.IsVisible = $scope.IsVisible ? false : true;
   }
-  $scope.YouTube = false;
-  $scope.ShowTrailer = function () {
-  $scope.YouTube = $scope.YouTube ? false : true;
-  }
 
   $scope.gallery = [
     {
