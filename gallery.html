@@ -17,9 +17,12 @@
 <body ng-app="app">
   <header>
      <div class="gallery-header">Gallery</div>
+     <span class="logo-toggleR"><a href="index.html"></a></span>
+     <span class="logo-toggleL"><a href="index.html"></a></span>
  </header>
   <div class="main-content" ng-controller="contentController">
-     <div class="picture-container">
+    <span><a href="index.html" class="fa fa-angle-left"></a></span>
+      <div class="picture-container">
        <span ng-repeat="image in gallery">
            <p>{{image.name}}</p>
            <img ng-src="{{image.img}}">

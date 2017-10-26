@@ -13,15 +13,15 @@ app.controller('contentController', function($scope){
 
   $scope.gallery = [
     {
-      name: 'Elijah',
+      name: 'Elijah - Business Owner, Inktastic',
       img: 'Elijah.jpg'
     },
     {
-      name: 'Clark Kent',
+      name: 'Clark Kent - DJ/Producer/Shoes Enthusiast',
       img: 'ClarkKent.jpg'
     },
     {
-      name: 'Gotti',
+      name: 'Gotti - Business Owner, Exotic Cuts',
       img: 'Gotti.jpg'
     }
   ];
